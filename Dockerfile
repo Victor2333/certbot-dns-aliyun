@@ -11,7 +11,7 @@ RUN wget https://aliyuncli.alicdn.com/aliyun-cli-linux-latest-amd64.tgz && \
     rm aliyun-cli-linux-latest-amd64.tgz
 
 # Copy and install certbot-dns-aliyun plugin
-RUN wget https://cdn.jsdelivr.net/gh/justjavac/certbot-dns-aliyun@main/alidns.sh && \
+RUN wget https://raw.githubusercontent.com/Victor2333/certbot-dns-aliyun/refs/heads/main/alidns.sh && \
     mv alidns.sh /usr/local/bin/alidns && \
     chmod +x /usr/local/bin/alidns
 
